@@ -43,7 +43,7 @@ export default function OrganizerDashboard() {
       {stats && (
         <>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-            {cards!.map(([label, value]) => (
+        {cards!.map(([label, value]: [string, number]) => (
               <div key={label as string} className="rounded-xl border border-gray-200 bg-white p-5">
                 <p className="text-sm text-gray-500">{label}</p>
                 <p className="mt-1 text-3xl font-bold text-brand-800">{value}</p>
